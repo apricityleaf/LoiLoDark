@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "LoiLoDark",
+  "version": "1.0.0",
+  "description": "非公式のロイロノートのダークモード用Chrome拡張機能。ロイロの規約を守ってお使いください。",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "ダークモード切り替え",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://loilonote.app/*",
+        "http://loilonote.app/*"
+      ],
+      "css": [],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dark-mode.css"],
+      "matches": [
+        "https://loilonote.app/*",
+        "http://loilonote.app/*"
+      ]
+    }
+  ]
+}

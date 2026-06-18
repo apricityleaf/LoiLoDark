@@ -1,0 +1,915 @@
+html[data-ext-dark-mode="on"] {
+  --primaryBlue: #3d9bff !important;
+  --primaryBlueTint: #5aa8ff !important;
+  --primaryBlueHighlight: #1c3a5e !important;
+  --primaryGray: #8a8a8a !important;
+  --textSecondary: #b0b0b0 !important;
+  --primaryGrayHighlight: #3a3a3c !important;
+  --disabledColor: #6e6e72 !important;
+  --disabledBorderColor: #8d8d92 !important;
+  --primaryRed: #ff5c5c !important;
+  --primaryRedHighlight: #4a1f1f !important;
+  --primaryGreen: #2ec990 !important;
+  --primaryGreenHighlight: #1d3a30 !important;
+  --primaryLightGreen: #9ad94a !important;
+  --primaryLightGreenHighlight: #2c3a1a !important;
+  --neutralColor: #8a8a8a !important;
+  --primaryBgColor: #1c1c1e !important;
+  --brightSeparatorColor: #3a3a3c !important;
+  --darkTextColor: #f2f2f2 !important;
+  --darkTextActiveColor: #555 !important;
+  --whiteBgActiveColor: #3a3a3c !important;
+  --whiteBgHoverColor: #233347 !important;
+  --whiteBgSelectedColor: #1c3a5e !important;
+  --whiteHighlightColor: #555 !important;
+  --blackHighlightColor: #777 !important;
+  --warnYellow: #c9a93c !important;
+  --errorRed: #ff6f5e !important;
+  --desktopBackColor: #12264d !important;/*0a1530とかもアリだが「蝋色」の意匠を尊重*/ 
+  --focusColor: rgb(150, 170, 190) !important;
+  --focusShadowColor: rgb(150, 170, 190, .25) !important;
+  --focusBrightColor: rgb(90, 170, 255) !important;
+  --focusBrightShadowColor: rgb(90, 170, 255, .45) !important;
+  --navBodyBackground: #1c1c1e !important;
+  --navBodyBackgroundBright: #121214 !important;
+  --roundListItemDividerColor: #3a3a3c !important;
+  --roundListItemChevronColor: #3a3a3c !important;
+  --roundListItemBackgroundColor: #1f1f21 !important;
+  --roundListItemActiveBackgroundColor: #3a3a3c !important;
+  --roundListItemHoverBackgroundColor: #233347 !important;
+  --roundListItemSelectedBackgroundColor: #1c3a5e !important;
+  --roundListItemColor: #f2f2f2 !important;
+  --roundListSectionHeaderColor: #d0d0d0 !important;
+  --redBadgeColor: #ff4d4d !important;
+  --greenBadgeColor: #6fae00 !important;
+  --sharedNoteLockColor: #d4775e !important;
+  --sharedNoteUnlockColor: #2bbcb6 !important;
+  --submissionBoxInPreparation: #2ec990 !important;
+  --submissionBoxInPreparationHighlight: #234a3c !important;
+  --callForAnswers: #ff5c5c !important;
+  --callForAnswersInHighlight: #4a2424 !important;
+  --courseListItemOpenedBackgroundColor: #2c2c2e !important;
+  --courseListItemOpenedAndHoverBackgroundColor: #333335 !important;
+  --courseListItemOpenedAndActiveBackgroundColor: #1c3a5e !important;
+  --courseListItemSelectedBackgroundColor: #1c3a5e !important;
+  --courseListItemSelectedAndHoverBackgroundColor: #233347 !important;
+  --courseListItemSelectedAndActiveBackgroundColor: #2c2c2e !important;
+  --courseListUnopenedColor: #8a8a8a !important;
+  --courseListBodyBackgroundColorTranslucent: #1c1c1ebf !important;
+  --selfStudyNavigationButtonSelectedBackgroundColor: #1c3a5e !important;
+  --selfStudyNavigationButtonSelectedAndHoverBackgroundColor: #233347 !important;
+  --courseMenuOnBackgroundColor: #f2f2f2 !important;
+  --courseMenuDividerBackgroundColor: #3a3a3c !important;
+  --tabListItemSelectedBackgroundColor: #1f1f21 !important;
+  --tabListBackgroundColor: #1c1c1e !important;
+  --tabListBorderColor: #3a3a3c !important;
+  --tabListItemColor: #b0b0b0 !important;
+  --noteListItemHoverBackgroundColor: #2a2a2c !important;
+  --noteListItemSelectedBackgroundColor: #3a3a3c !important;
+  --noteListItemOpenedBackgroundColor: #1c3a5e !important;
+  --noteListItemOpenedAndHoverBackgroundColor: #233347 !important;
+  --noteListItemOpenedAndSelectedBackgroundColor: #1f3c60 !important;
+  --noteListTextSecondaryColor: #9a9aa3 !important;
+  --noteListMoreIconColor: #9a9aa3 !important;
+  --noteListMoreIconHoverColor: #c0c0c8 !important;
+  --createNoteButtonShadowColor: #1d4f80 !important;
+  --toggleBackgroundColorOn: #34c759 !important;
+  --toggleBackgroundColorOff: #54545a !important;
+  --url-clip-balloon-border-color: #3d9bff !important;
+  --addWebCardDialogFontColor: #b0b0b0 !important;
+  --userProfileV2DefaultColor: #1c1c1e !important;
+  --editorTintColor: #3d9bff !important;
+  --editorTextTitleColor: #cfe3ea !important;
+  --editorAvSpeedScaleColor: #6e6e72 !important;
+}
+html[data-ext-dark-mode="on"] .uiPopoverItem,
+html[data-ext-dark-mode="on"] .uiPopoverHeader,
+html[data-ext-dark-mode="on"] .uiDialogContent,
+html[data-ext-dark-mode="on"] .listViewCell,
+html[data-ext-dark-mode="on"] .columnSizePopoverItem,
+html[data-ext-dark-mode="on"] .editorTextToolListDialog,
+html[data-ext-dark-mode="on"] .changeBackgroundColorDialog,
+html[data-ext-dark-mode="on"] .textColorDialog,
+html[data-ext-dark-mode="on"] .textSizeDialog,
+html[data-ext-dark-mode="on"] .textSizeDialogControlsContainer,
+html[data-ext-dark-mode="on"] .lineHeightDialog,
+html[data-ext-dark-mode="on"] .editorVolumePopup,
+html[data-ext-dark-mode="on"] .editorDurationPopup,
+html[data-ext-dark-mode="on"] .editorSpeedScalePopup,
+html[data-ext-dark-mode="on"] .speechTestDialog,
+html[data-ext-dark-mode="on"] .quizSharingModeDialogBody,
+html[data-ext-dark-mode="on"] .sendDialog,
+html[data-ext-dark-mode="on"] .sendTimeInputDialogBody,
+html[data-ext-dark-mode="on"] .sharedURLConfirmDialog,
+html[data-ext-dark-mode="on"] .sharedURLConfirmDialog .sharedURLConfirmDialogHeader,
+html[data-ext-dark-mode="on"] .submissionBoxCreateDialogBody,
+html[data-ext-dark-mode="on"] .submissionBoxCreateDatePickerV1,
+html[data-ext-dark-mode="on"] .submissionExpiryDialogV1[data-popover="true"],
+html[data-ext-dark-mode="on"] .userGroupJoinCodeDialog,
+html[data-ext-dark-mode="on"] .userPickerSection,
+html[data-ext-dark-mode="on"] .addWebCardDialog,
+html[data-ext-dark-mode="on"] .addWebCardDialogHeader,
+html[data-ext-dark-mode="on"] .leadingWebCardExtDialog,
+html[data-ext-dark-mode="on"] .leadingWebCardExtDialogHeader,
+html[data-ext-dark-mode="on"] .userProfileV2Popover,
+html[data-ext-dark-mode="on"] .roundedAddCourseListSectionInner,
+html[data-ext-dark-mode="on"] .testCardDialog .menuButton,
+html[data-ext-dark-mode="on"] .menu,
+html[data-ext-dark-mode="on"] .desktopBackButton,
+html[data-ext-dark-mode="on"] .documentPreviewHeaderButton,
+html[data-ext-dark-mode="on"] .editorTextColorButtonBackground,
+html[data-ext-dark-mode="on"] .popoverMenu,
+html[data-ext-dark-mode="on"] .popoverMenuItemBackground,
+html[data-ext-dark-mode="on"] .popoverMenuItemBackground[data-selected="true"]:active,
+html[data-ext-dark-mode="on"] .materialBox,
+html[data-ext-dark-mode="on"] .materialBoxSharingListBody,
+html[data-ext-dark-mode="on"] .editorMathField,
+html[data-ext-dark-mode="on"] .sharedNoteSessionButton,
+html[data-ext-dark-mode="on"] .sendTimeSelectorDisabledReason,
+html[data-ext-dark-mode="on"] .userPickerCellDisabledReason,
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsDetailBody,
+html[data-ext-dark-mode="on"] .sortNoteListPopoverContent,
+html[data-ext-dark-mode="on"] .submissionHistoryPopover,
+html[data-ext-dark-mode="on"] .unSupportBrowserInfo,
+html[data-ext-dark-mode="on"] .loginWarning,
+html[data-ext-dark-mode="on"] .noScriptMessage,
+html[data-ext-dark-mode="on"] .uiDialogErrorDetailContent {
+  background-color: #1f1f21 !important;
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsDetailSection,
+html[data-ext-dark-mode="on"] .loginYourBrowser,
+html[data-ext-dark-mode="on"] .testCardContainer[data-type="quiz-survey"],
+html[data-ext-dark-mode="on"] .testCardContainer[data-type="quiz-test"],
+html[data-ext-dark-mode="on"] .testCardContainer[data-type="attendance"] {
+  background-color: #29292b !important;
+}
+html[data-ext-dark-mode="on"] .testCardContainer[data-type="quiz-survey"] { background-color: #4a3a1c !important; }
+html[data-ext-dark-mode="on"] .testCardContainer[data-type="quiz-test"] { background-color: #1c3a40 !important; }
+html[data-ext-dark-mode="on"] .testCardContainer[data-type="attendance"] { background-color: #1f3a26 !important; }
+html[data-ext-dark-mode="on"] .uiIcon[data-preset="blue"],
+html[data-ext-dark-mode="on"] .uiButton[data-preset="blue"] {
+  --presetColor: #3d9bff !important;
+  --presetHglColor: #1c3a5e !important;
+}
+html[data-ext-dark-mode="on"] .uiIcon[data-preset="red"],
+html[data-ext-dark-mode="on"] .uiButton[data-preset="red"] {
+  --presetColor: #ff5c5c !important;
+  --presetHglColor: #4a1f1f !important;
+}
+html[data-ext-dark-mode="on"] .uiIcon[data-preset="green"],
+html[data-ext-dark-mode="on"] .uiButton[data-preset="green"] {
+  --presetColor: #2ec990 !important;
+  --presetHglColor: #1d3a30 !important;
+}
+html[data-ext-dark-mode="on"] .uiIcon[data-preset="light-green"],
+html[data-ext-dark-mode="on"] .uiButton[data-preset="light-green"] {
+  --presetColor: #9ad94a !important;
+  --presetHglColor: #2c3a1a !important;
+}
+html[data-ext-dark-mode="on"] .uiIcon[data-preset="blue/white"],
+html[data-ext-dark-mode="on"] .uiButton[data-preset="blue/white"] {
+  --presetColor: #3d9bff !important;
+  --presetHglColor: #2a2a2c !important;
+}
+html[data-ext-dark-mode="on"] .uiIcon[data-preset="gray"],
+html[data-ext-dark-mode="on"] .uiButton[data-preset="gray"] {
+  --presetColor: #8a8a8a !important;
+  --presetHglColor: #3a3a3c !important;
+}
+html[data-ext-dark-mode="on"] .uiIcon[data-preset="white"],
+html[data-ext-dark-mode="on"] .uiButton[data-preset="white"] {
+  --presetColor: #ffffff !important;
+  --presetHglColor: #555 !important;
+}
+html[data-ext-dark-mode="on"] .uiIcon[data-preset="black"],
+html[data-ext-dark-mode="on"] .uiButton[data-preset="black"] {
+  --presetColor: #f2f2f2 !important;
+  --presetHglColor: #777 !important;
+}
+html[data-ext-dark-mode="on"] .uiButton[aria-disabled="true"] {
+  color: #6e6e72 !important;
+}
+html[data-ext-dark-mode="on"] body,
+html[data-ext-dark-mode="on"] #main,
+html[data-ext-dark-mode="on"] #main #side,
+html[data-ext-dark-mode="on"] .noscriptFullScreen,
+html[data-ext-dark-mode="on"] .submissionPreview,
+html[data-ext-dark-mode="on"] .addCardTypeSelector,
+html[data-ext-dark-mode="on"] .sharedNoteSnapshotPreviewImage,
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsTimelineCard .contentContainer {
+  background-color: #12264d !important;/*0a1530とかもアリだが「蝋色」の意匠を尊重*/ 
+}
+html[data-ext-dark-mode="on"] #main #side {
+  background: #28282866 !important;
+}
+
+html[data-ext-dark-mode="on"] .nav,
+html[data-ext-dark-mode="on"] .passwordInitializerInner {
+  background-color: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .nav[data-theme="bright"] {
+  background-color: #121214 !important;
+}
+html[data-ext-dark-mode="on"] .loginWarningWrapper {
+  background-color: #121214f2 !important;
+}
+html[data-ext-dark-mode="on"] a,
+html[data-ext-dark-mode="on"] a:visited {
+  color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .uiDialogBackdrop,
+html[data-ext-dark-mode="on"] .fadeModalBg[data-overlay="true"],
+html[data-ext-dark-mode="on"] .userGroupJoinCodeDialogWrapper {
+  background-color: #000a !important;
+}
+html[data-ext-dark-mode="on"] .ellipsisTextPopover {
+  background-color: #2c2c2e !important;
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .toastInner {
+  background-color: #1f1f21 !important;
+  color: #3d9bff !important;
+  border: 1px solid #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .uiDialogButton {
+  background-color: #3d9bff !important;
+  --presetColor: #12264d !important;/*0a1530とかもアリだが「蝋色」の意匠を尊重*/ 
+  --presetHglColor: #12264d !important;/*0a1530とかもアリだが「蝋色」の意匠を尊重*/ 
+}
+html[data-ext-dark-mode="on"] .uiDialogButton:active,
+html[data-ext-dark-mode="on"] .uiDialogButton[aria-disabled="true"] {
+  background-color: #1c3a5e !important;
+}
+html[data-ext-dark-mode="on"] .uiDialogButton.cancel {
+  background-color: #1f1f21 !important;
+  color: #3d9bff !important;
+  border: solid 1px #8d8d92 !important;
+}
+html[data-ext-dark-mode="on"] .uiDialogButton.cancel:active,
+html[data-ext-dark-mode="on"] .uiDialogButton.cancel[aria-disabled="true"] {
+  color: #1c3a5e !important;
+}
+html[data-ext-dark-mode="on"] .uiDialogErrorDetailToggleButton {
+  background-color: transparent !important;
+  color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .popoverMenuItem {
+  --presetColor: #f2f2f2 !important;
+  --presetHglColor: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .popoverMenuItem[aria-disabled="true"],
+html[data-ext-dark-mode="on"] .popoverMenuItemPager[aria-disabled="true"] {
+  --presetDisabledColor: #6e6e72 !important;
+}
+html[data-ext-dark-mode="on"] .popoverMenuItemDeleteButton {
+  --presetColor: #ff453a !important;
+  --presetHglColor: #ff453a !important;
+}
+html[data-ext-dark-mode="on"] .popoverMenuItems::-webkit-scrollbar-thumb {
+  background-color: #ffffff4d !important;
+}
+html[data-ext-dark-mode="on"] .listViewSectionTitle,
+html[data-ext-dark-mode="on"] .listCellDualDesc,
+html[data-ext-dark-mode="on"] .uiListDesc,
+html[data-ext-dark-mode="on"] .uiInputTitle,
+html[data-ext-dark-mode="on"] .roundListItemSubText,
+html[data-ext-dark-mode="on"] .grayText,
+html[data-ext-dark-mode="on"] .noteListModalSubDesc,
+html[data-ext-dark-mode="on"] .noteListFallbackMsg,
+html[data-ext-dark-mode="on"] .noteListTrashBoxHeaderMsg,
+html[data-ext-dark-mode="on"] .courseListNavigationSubDesc,
+html[data-ext-dark-mode="on"] .courseListNavigationButtonTitle,
+html[data-ext-dark-mode="on"] .timelineDisplayName,
+html[data-ext-dark-mode="on"] .timelineDate,
+html[data-ext-dark-mode="on"] .timelineEntryDesc,
+html[data-ext-dark-mode="on"] .materialBoxSharingListError,
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsBody .errorMessage,
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsBody .noItemsMessage,
+html[data-ext-dark-mode="on"] .unsupportedDocumentFile,
+html[data-ext-dark-mode="on"] .submissionOpenAtText,
+html[data-ext-dark-mode="on"] .submissionListCellFooterPageIndex,
+html[data-ext-dark-mode="on"] .editorSpeedScaleLabel,
+html[data-ext-dark-mode="on"] .editorLoadErrorDialogMessage,
+html[data-ext-dark-mode="on"] .menuTitle,
+html[data-ext-dark-mode="on"] .coursePeriodPopoverItem,
+html[data-ext-dark-mode="on"] .userProfileV2PopoverAccountItem,
+html[data-ext-dark-mode="on"] .tutorialDialogHeader,
+html[data-ext-dark-mode="on"] .sendReservationSendToUsersPopoverTitle,
+html[data-ext-dark-mode="on"] .sendReservationSendToUserListItem,
+html[data-ext-dark-mode="on"] .timelineSendToUserListItem,
+html[data-ext-dark-mode="on"] .submissionListCourseTitle {
+  color: #b0b0b0 !important;
+}
+html[data-ext-dark-mode="on"] .menuTitle,
+html[data-ext-dark-mode="on"] .submissionListCourseTitle,
+html[data-ext-dark-mode="on"] .sendTimeSelector,
+html[data-ext-dark-mode="on"] .durationAutoCheckbox,
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsTextSearchContainer .uiInputText,
+html[data-ext-dark-mode="on"] .editorRecordingAdjusterInput,
+html[data-ext-dark-mode="on"] .editorLoadErrorDialogTitle,
+html[data-ext-dark-mode="on"] .submissionHistoryPopoverSubmitDate,
+html[data-ext-dark-mode="on"] .submissionComparisonCellAuthorName,
+html[data-ext-dark-mode="on"] .screenSharingComparisonCellAuthorName,
+html[data-ext-dark-mode="on"] .submissionListCellHeader,
+html[data-ext-dark-mode="on"] .submissionListCourseTitle,
+html[data-ext-dark-mode="on"] .calendarPanelContent,
+html[data-ext-dark-mode="on"] .segmentedDateTimeInputLabel {
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .userProfileV2MaintenanceInfo,
+html[data-ext-dark-mode="on"] .screenSharePopoverDescription,
+html[data-ext-dark-mode="on"] .submissionBoxCreateDialogTitleError,
+html[data-ext-dark-mode="on"] .uiDialogInputError,
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsDateTimeEditContainer .alertMessage,
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsTextSearchContainer .alertMessage {
+  color: #ff6f5e !important;
+}
+html[data-ext-dark-mode="on"] .uiInputText,
+html[data-ext-dark-mode="on"] .addUrlInputWrap input,
+html[data-ext-dark-mode="on"] .submissionBoxCreateDialogTitleInput,
+html[data-ext-dark-mode="on"] .addCourseCreateSubject input[type="text"],
+html[data-ext-dark-mode="on"] .addCourseSelectSubjectNoCourse,
+html[data-ext-dark-mode="on"] .sendTimeSelectorButton,
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsCardSelectButton,
+html[data-ext-dark-mode="on"] .segmentedDateTimeInputGroup,
+html[data-ext-dark-mode="on"] .dateTimePickerBody {
+  border: 1px solid #5a5a5e !important;
+  background-color: #1f1f21 !important;
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] input[type="text"][disabled],
+html[data-ext-dark-mode="on"] .uiInputSubmit[disabled] {
+  color: #6e6e72 !important;
+}
+html[data-ext-dark-mode="on"] .uiInputSubmit {
+  background-color: #3d9bff !important;
+  color: #12264d !important;/*0a1530とかもアリだが「蝋色」の意匠を尊重*/ 
+}
+html[data-ext-dark-mode="on"] .uiInputSubmit:active {
+  background-color: #5aa8ff !important;
+}
+html[data-ext-dark-mode="on"] .uiInputSubmit[disabled] {
+  background-color: #6e6e72 !important;
+  color: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .sendTimeSelectorButton[data-invalid="true"] {
+  color: #ff6f5e !important;
+  background-color: #4a1f1f33 !important;
+  border-color: #ff6f5e !important;
+}
+html[data-ext-dark-mode="on"] .sendTimeSelectorValueLabel {
+  color: #f2f2f2 !important;
+  background-color: #4a3a1c !important;
+}
+html[data-ext-dark-mode="on"] .sendTimeSelectorValue[data-placeholder="true"] {
+  color: #999 !important;
+}
+html[data-ext-dark-mode="on"] .appSettingsErrorMessage {
+  color: #ffb0b6 !important;
+  background-color: #3a1f22 !important;
+  border: 1px solid #6e2d33 !important;
+}
+html[data-ext-dark-mode="on"] .uiStatusBadge {
+  background-color: #8d8d92 !important;
+}
+html[data-ext-dark-mode="on"] .uiStatusBadge[data-state="green"] {
+  background-color: #6fae00 !important;
+}
+html[data-ext-dark-mode="on"] .uiStatusBadge[data-state="yellow"] {
+  background-color: #c9c200 !important;
+}
+html[data-ext-dark-mode="on"] .uiStatusBadge[data-state="red"] {
+  background-color: #cc0000 !important;
+}
+html[data-ext-dark-mode="on"] .guideText {
+  color: #4fd17a !important;
+}
+html[data-ext-dark-mode="on"] .redBadge {
+  background-color: #cc0000 !important;
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .greenBadge {
+  background-color: #6fae00 !important;
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteLockBadge.redBadge {
+  background-color: #d4775e !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteLockBadge.greenBadge {
+  background-color: #2bbcb6 !important;
+}
+html[data-ext-dark-mode="on"] .submissionStatusBadge[data-status="submitted"] {
+  background-color: #6fae00 !important;
+}
+html[data-ext-dark-mode="on"] .submissionStatusBadge[data-status="submittedLate"] {
+  background-color: #888 !important;
+}
+html[data-ext-dark-mode="on"] .submissionStatusBadge[data-status="notSubmitted"] {
+  background-color: #cc0000 !important;
+}
+html[data-ext-dark-mode="on"] .submissionHistoryBoxBadge {
+  background-color: #7a7a7a !important;
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .submissionHistoryBoxBadge[data-updated="true"] {
+  background-color: #cc0000 !important;
+}
+html[data-ext-dark-mode="on"] .notificationIconBadge {
+  background: #cc0000 !important;
+}
+html[data-ext-dark-mode="on"] .userProfileV2NotificationCount {
+  background-color: #8d8d92 !important;
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .submissionBoardTime {
+  border-color: #ff5c5c !important;
+  color: #ff5c5c !important;
+}
+html[data-ext-dark-mode="on"] .submissionBoardTitle {
+  background-color: #1f1f21 !important;
+  color: #ff5c5c !important;
+}
+html[data-ext-dark-mode="on"] .submissionBoard:active .submissionBoardTitle,
+html[data-ext-dark-mode="on"] .submissionBoardTitle:active {
+  color: #f2f2f2 !important;
+  background-color: #cc0000 !important;
+}
+html[data-ext-dark-mode="on"] .submissionBoardStatusMark {
+  background-color: #6fae00 !important;
+}
+html[data-ext-dark-mode="on"] .submissionComparison,
+html[data-ext-dark-mode="on"] .screenSharingComparison,
+html[data-ext-dark-mode="on"] .screenSharingFullscreen {
+  background-color: #000 !important;
+}
+html[data-ext-dark-mode="on"] .submissionComparisonCell[data-hover="true"] {
+  background-color: #ffffff26 !important;
+}
+html[data-ext-dark-mode="on"] .submissionComparisonCellOuter {
+  border: 1px solid #8a8a8a !important;
+}
+html[data-ext-dark-mode="on"] .submissionComparisonCellOuter[data-owner-type="teacher"],
+html[data-ext-dark-mode="on"] .submissionListCell[data-owner-type="teacher"] {
+  border-color: #2d9cf0 !important;
+}
+html[data-ext-dark-mode="on"] .submissionComparisonCellOuter[data-owner-type="self"],
+html[data-ext-dark-mode="on"] .submissionListCell[data-owner-type="self"] {
+  border-color: #d99a00 !important;
+}
+html[data-ext-dark-mode="on"] .submissionComparisonCellAuthorName,
+html[data-ext-dark-mode="on"] .submissionListCellHeader,
+html[data-ext-dark-mode="on"] .submissionListCellSubmittedDate,
+html[data-ext-dark-mode="on"] .submissionListCellFooterPageIndex {
+  background-color: #000000 !important;
+}
+html[data-ext-dark-mode="on"] .submissionComparisonCellOuter[data-owner-type="teacher"] .submissionComparisonCellAuthorName,
+html[data-ext-dark-mode="on"] .submissionListCell[data-owner-type="teacher"] .submissionListCellHeader {
+  background-color: #2d9cf07f !important;
+}
+html[data-ext-dark-mode="on"] .submissionComparisonCellOuter[data-owner-type="self"] .submissionComparisonCellAuthorName,
+html[data-ext-dark-mode="on"] .submissionListCell[data-owner-type="self"] .submissionListCellHeader {
+  background-color: #d99a007f !important;
+}
+html[data-ext-dark-mode="on"] .submissionListCellHeader[data-invisible="true"] {
+  background-color: #fff0 !important;
+}
+html[data-ext-dark-mode="on"] .submissionBox {
+  box-shadow: 2px 2px 8px #000a !important;
+}
+html[data-ext-dark-mode="on"] .submissionBoxMegaClassErrorToastInner {
+  background-color: #2c2c30 !important;
+}
+html[data-ext-dark-mode="on"] .submissionActiveCell {
+  background-color: #3a2226 !important;
+}
+html[data-ext-dark-mode="on"] .submissionStatusText {
+  color: #ff6f5e !important;
+}
+html[data-ext-dark-mode="on"] .submissionStatusText[data-submitted="true"] {
+  color: #4fd17a !important;
+}
+html[data-ext-dark-mode="on"] .submissionListBody {
+  background-color: #2c2c30 !important;
+}
+html[data-ext-dark-mode="on"] .submissionListTitleButton {
+  color: #3d9bff !important;
+  border: 1px solid #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .submissionListTitleButton:active {
+  background-color: #3d9bff !important;
+  color: #12264d !important;/*0a1530とかもアリだが「蝋色」の意匠を尊重*/ 
+}
+html[data-ext-dark-mode="on"] .submissionListMiddleHeaderSort {
+  color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .submissionListCellDotMark,
+html[data-ext-dark-mode="on"] .redCheckIcon,
+html[data-ext-dark-mode="on"] .redDotIconInner,
+html[data-ext-dark-mode="on"] .submissionHistoryItemDotMark {
+  background-color: #ff4d4d !important;
+}
+html[data-ext-dark-mode="on"] .submissionListCellHiddenContent,
+html[data-ext-dark-mode="on"] .submissionListCellNotAnswered {
+  background-color: #3a3a3c !important;
+}
+html[data-ext-dark-mode="on"] .submissionListCellHiddenContent[data-blue="true"] {
+  background-color: #1c5d8a !important;
+}
+html[data-ext-dark-mode="on"] .submissionExpiryText {
+  background: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .submissionHistoryBoxIcon,
+html[data-ext-dark-mode="on"] .editorButton:active .submissionHistoryBoxIcon {
+  background-color: #d0d0d0 !important;
+}
+html[data-ext-dark-mode="on"] .submissionHistoryPopoverItem[data-selected="true"],
+html[data-ext-dark-mode="on"] .submissionHistoryPopoverItem:active {
+  background-color: #2a4f78 !important;
+}
+html[data-ext-dark-mode="on"] .submissionHistoryPopoverCheckMark {
+  background-color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .submissionHistoryPopoverThumbImage[data-loaded="true"] {
+  border: .1px solid #555 !important;
+}
+html[data-ext-dark-mode="on"] .submissionListItemDisabled {
+  background-color: #29292b !important;
+  color: #6e6e72 !important;
+}
+html[data-ext-dark-mode="on"] .submissionTabPanelListItemCell {
+  background-color: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .listViewCell[data-highlight="true"],
+html[data-ext-dark-mode="on"] .listViewCell[data-clickable="true"]:not([aria-disabled="true"]):active {
+  background-color: #2a4f78 !important;
+}
+html[data-ext-dark-mode="on"] .listViewCell[aria-disabled="true"] {
+  color: #6e6e72 !important;
+}
+html[data-ext-dark-mode="on"] .listViewSecondaryBody {
+  color: #555 !important;
+}
+html[data-ext-dark-mode="on"] .listViewSelectable {
+  border: 2px solid #555 !important;
+}
+html[data-ext-dark-mode="on"] .listViewSelectable[data-checked="true"] {
+  background-color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .listViewSelectable[data-checked="true"][data-select-type="delete"] {
+  background-color: #cc0000 !important;
+}
+html[data-ext-dark-mode="on"] .roundListItem[aria-selected="true"] {
+  background-color: #1c3a5e !important;
+}
+html[data-ext-dark-mode="on"] .roundListSelectable {
+  border: 2px solid #555 !important;
+}
+html[data-ext-dark-mode="on"] .roundListItem[aria-disabled="true"] {
+  color: #6e6e72 !important;
+}
+html[data-ext-dark-mode="on"] .roundListItem[aria-disabled="true"]:hover {
+  background-color: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .noteListListItem[data-note-open="true"],
+html[data-ext-dark-mode="on"] .noteListGridItem[data-note-open="true"] {
+  background-color: #1c3a5e !important;
+}
+html[data-ext-dark-mode="on"] .noteListListItem[data-note-open="true"][data-selected="true"],
+html[data-ext-dark-mode="on"] .noteListGridItem[data-note-open="true"][data-selected="true"] {
+  background-color: #1f3c60 !important;
+}
+html[data-ext-dark-mode="on"] .noteListListItem[data-selected="true"],
+html[data-ext-dark-mode="on"] .noteListGridItem[data-selected="true"] {
+  background-color: #3a3a3c !important;
+}
+html[data-ext-dark-mode="on"] .courseListItem[data-note-opened="true"] {
+  background-color: #2c2c2e !important;
+}
+html[data-ext-dark-mode="on"] .courseListItem[data-note-opened="true"]:active {
+  background-color: #1c3a5e !important;
+}
+html[data-ext-dark-mode="on"] .courseListItem[data-selected="true"] {
+  background-color: #1c3a5e !important;
+}
+html[data-ext-dark-mode="on"] .courseListItem[data-selected="true"]:active {
+  background-color: #2c2c2e !important;
+}
+html[data-ext-dark-mode="on"] .courseMenu {
+  background-color: #08080866 !important;
+}
+html[data-ext-dark-mode="on"] .courseMenuHeader {
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .courseMenuBody {
+  background-color: var(--courseMenuBackgroundColor, #1c1c1e) !important;
+}
+html[data-ext-dark-mode="on"] .courseListUnopenedStatusV2 {
+  color: #8a8a8a !important;
+  border: 1px solid #8a8a8a !important;
+}
+html[data-ext-dark-mode="on"] .courseMenuTab {
+  --presetColor: #b0b0b0 !important;
+  --presetHglColor: #3d9bff !important;
+  background-color: transparent !important;
+}
+html[data-ext-dark-mode="on"] .courseMenuTab[aria-selected="true"] {
+  --presetColor: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .cameraDialogModalWrapper {
+  background-color: #070e1e !important;
+}
+html[data-ext-dark-mode="on"] .editorTextTool,
+html[data-ext-dark-mode="on"] .editorTextTool:active {
+  color: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .editorLoadErrorDialog {
+  background-color: #2c2c2ee5 !important;
+  border: solid 1px #555 !important;
+}
+html[data-ext-dark-mode="on"] .editorRecordingTextButton,
+html[data-ext-dark-mode="on"] .verticalTextButton {
+  color: #cfe3ea !important;
+}
+html[data-ext-dark-mode="on"] .editorTextPopoverSize {
+  color: #d6d6d6 !important;
+}
+html[data-ext-dark-mode="on"] .editorRecordingAdjusterButton {
+  background-color: #3a3a3e !important;
+}
+html[data-ext-dark-mode="on"] .editorRecordingAdjusterButton:active {
+  background-color: #555 !important;
+}
+html[data-ext-dark-mode="on"] .editorRecordingAdjusterButton > .editorRecordingAdjusterIcon {
+  background-color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .editorRecordingAdjusterButton:active > .editorRecordingAdjusterIcon {
+  background-color: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .durationAutoCheckbox {
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .editorFooterThumbnailPagerButton {
+  background-color: #1f1f21cc !important;
+  border: 1px solid #5a5a5e !important;
+}
+html[data-ext-dark-mode="on"] .editorFooterThumbnailCanvas {
+  background-color: #1f1f21cc !important;
+}
+html[data-ext-dark-mode="on"] .editorDrawToolStampDialog {
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .screenSharingAuthorName {
+  background-color: #1f1f21 !important;
+  color: #ddd !important;
+  border: 1px #555 solid !important;
+}
+html[data-ext-dark-mode="on"] .editorTimestampAuthorNamePageNumber {
+  background-color: #1f1f21 !important;
+  color: #ddd !important;
+  border: 1px #555 solid !important;
+}
+html[data-ext-dark-mode="on"] .navigateMonthPickerToggleButtonV1,
+html[data-ext-dark-mode="on"] .monthPickerYearMonthSegmentV1,
+html[data-ext-dark-mode="on"] .dateTimeInputSelectV1 {
+  background-color: #1c3450 !important;
+}
+html[data-ext-dark-mode="on"] .calendarDayOfMonthItemV1[data-selected="true"],
+html[data-ext-dark-mode="on"] .calendarDayOfMonthButton[data-selected="true"] {
+  background-color: #1c3a5e !important;
+  color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .calendarDayOfMonthButton[data-selected="true"] {
+  background-color: #3d9bff !important;
+  color: #12264d !important;/*0a1530とかもアリだが「蝋色」の意匠を尊重*/ 
+}
+html[data-ext-dark-mode="on"] .monthPickerMonthInputV1 {
+  background: #1f1f21 !important;
+  border: solid 1px #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .dateTimePickerBodyV1,
+html[data-ext-dark-mode="on"] .dateTimeInputSelectV1 {
+  background: #1c3450 !important;
+}
+html[data-ext-dark-mode="on"] .uiSegmentItemV1 {
+  background-color: #1f1f21 !important;
+  color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .uiSegmentItemV1:not([aria-disabled="true"]):active {
+  color: #12264d !important;/*0a1530とかもアリだが「蝋色」の意匠を尊重*/ 
+  background-color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .uiSegmentItemV1[aria-disabled="true"] {
+  color: #6e6e72 !important;
+  border-color: #8d8d92 !important;
+}
+html[data-ext-dark-mode="on"] .yearMonthRollPopoverInner,
+html[data-ext-dark-mode="on"] .rollColumn {
+  background: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .timeInputPopoverInner {
+  background: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .rollHighlight {
+  background: #1c3a5e !important;
+}
+html[data-ext-dark-mode="on"] .rollItem[data-selected="true"] {
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .segmentedDateTimeInputContainer[data-quick-pick] .segmentedDateTimeInputGroup:not([data-active="true"]) {
+  background-color: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .segmentedDateTimeInputGroup[data-active="true"] {
+  border: 2px solid #3d9bff !important;
+  background-color: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .calendarToggleButton {
+  background-color: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .calendarToggleButton[data-active="true"] {
+  background-color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .userPickerCell {
+  background-color: #2a4f6e !important;
+}
+html[data-ext-dark-mode="on"] .userPickerCell[data-teacher="true"],
+html[data-ext-dark-mode="on"] .sharedNoteUserCell[data-teacher="true"] {
+  background-color: #5a4520 !important;
+}
+html[data-ext-dark-mode="on"] .userPickerCell[aria-disabled="true"],
+html[data-ext-dark-mode="on"] .userPickerCell[data-disabled="true"] {
+  background: #2c2c2e !important;
+  color: #999 !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteUserCell {
+  background-color: #2a4f6e !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteUserCell.offline {
+  background-color: #233347 !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteUserCell.offline[data-teacher="true"] {
+  background-color: #3d3318 !important;
+}
+html[data-ext-dark-mode="on"] .userStatusRed { background-color: #8a3a3b !important; }
+html[data-ext-dark-mode="on"] .userStatusYellow { background-color: #8a8a3b !important; }
+html[data-ext-dark-mode="on"] .userStatusGray { background-color: #3a3a3c !important; }
+html[data-ext-dark-mode="on"] .userStatusWhite { background-color: #1f1f21 !important; }
+html[data-ext-dark-mode="on"] .timelineSendingIndicator {
+  color: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .timelineBalloonArrow:before {
+  background-color: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .timelineBalloonContent {
+  background-color: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .timelineSendToPopover,
+html[data-ext-dark-mode="on"] .sendReservationSendToUsersPopover,
+html[data-ext-dark-mode="on"] .sendReservationSendToUsersList {
+  background-color: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteHistoryPreviewListItem {
+  border: 2px solid #2c2c2e !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsListItemWrapper:hover {
+  background-color: #2a2a2c !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsListItemWrapper:active {
+  background-color: #1c3a5e !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsTimelinePreviewBody {
+  background-color: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsPreviousCard:after {
+  border: solid 2px #f2f2f2 !important;
+  background: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsTimelineCommand .detailButton {
+  background-color: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsDetailSection .titleContainer .infoIcon,
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsDetailSection .titleContainer .editorIcon,
+html[data-ext-dark-mode="on"] .sharedNoteEditLogsCopyButton .copyIcon {
+  background-color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .tutorialDialog {
+  background-color: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .tutorialItemListPopover {
+  background-color: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .tutorialVideoContainer {
+  background: #2c2c2e !important;
+}
+html[data-ext-dark-mode="on"] .tutorialDialogFooter {
+  background-color: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .tutorialHeaderButtonsBorder {
+  background: #3a3a3c !important;
+}
+html[data-ext-dark-mode="on"] .userGroupJoinCodeDialog {
+  background: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .userGroupJoinCodeDialogButton {
+  background-color: #4a4a52 !important;
+}
+html[data-ext-dark-mode="on"] .userGroupJoinCodeDialogButton:active {
+  color: #4a4a52 !important;
+  background-color: #c7c7d0 !important;
+}
+html[data-ext-dark-mode="on"] .userProfileText {
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .createWebCardButton {
+  background-color: #1f1f21 !important;
+  color: #3d9bff !important;
+  border: 2px solid #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .createWebCardButton:active {
+  color: #12264d !important;/*0a1530とかもアリだが「蝋色」の意匠を尊重*/ 
+  background-color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .createWebCardButton[aria-disabled="true"] {
+  background-color: #555 !important;
+  border: 1px solid #5a5a5e !important;
+  color: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .leadingWebCardExtLink span {
+  color: #f2f2f2 !important;
+}
+html[data-ext-dark-mode="on"] .leadingWebCardExtLink {
+  background-color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .leadingWebCardExtLink:active {
+  background-color: #1c3a5e !important;
+}
+html[data-ext-dark-mode="on"] .searchBox {
+  background-color: #1f1f21 !important;
+  border: 1px solid #5a5a5e !important;
+  color: #f2f2f2de !important;
+}
+html[data-ext-dark-mode="on"] .addCourseAddUserGroupButton,
+html[data-ext-dark-mode="on"] .materialDialogSaveButton {
+  background-color: #1f1f21 !important;
+  border: 2px solid #3d9bff !important;
+  color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .addCourseAddUserGroupButton:active,
+html[data-ext-dark-mode="on"] .materialDialogSaveButton:not([aria-disabled="true"]):active {
+  color: #12264d !important;/*0a1530とかもアリだが「蝋色」の意匠を尊重*/ 
+  background-color: #3d9bff !important;
+}
+html[data-ext-dark-mode="on"] .materialDialogSaveButton[aria-disabled="true"] {
+  color: #6e6e72 !important;
+  border-color: #6e6e72 !important;
+  background-color: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .addCourseCreateSubjectButton {
+  border: 1px solid #5a5a5e !important;
+  background-color: #3d9bff !important;
+  --presetDisabledColor: #1c1c1e !important;
+}
+html[data-ext-dark-mode="on"] .addCourseCreateSubjectButton:active {
+  background-color: #1c3a5e !important;
+}
+html[data-ext-dark-mode="on"] .addCourseCreateSubjectButton[aria-disabled="true"] {
+  background-color: #555 !important;
+}
+html[data-ext-dark-mode="on"] .addCourseJoinCourseButton {
+  border: 2px solid #3d9bff !important;
+  color: #3d9bff !important;
+  background-color: #1f1f21 !important;
+}
+html[data-ext-dark-mode="on"] .addCourseJoinCourseButton:not([aria-disabled="true"]):active {
+  background-color: #3d9bff !important;
+  color: #12264d !important;/*0a1530とかもアリだが「蝋色」の意匠を尊重*/ 
+}
+html[data-ext-dark-mode="on"] .addCourseJoinCourseMark {
+  color: #555 !important;
+}
+html[data-ext-dark-mode="on"] .submissionListItemDisabled {
+  background-color: #29292b !important;
+}
+html[data-ext-dark-mode="on"] .genericMessage,
+html[data-ext-dark-mode="on"] .uploadMessage,
+html[data-ext-dark-mode="on"] .copyMessage {
+  background: #54545499 !important;
+}
+html[data-ext-dark-mode="on"] .a11yFocusLight,
+html[data-ext-dark-mode="on"] .a11yDomHighlight {
+  background-color: #ffffff40 !important;
+}
+html[data-ext-dark-mode="on"] .loginWarning,
+html[data-ext-dark-mode="on"] .submissionBox,
+html[data-ext-dark-mode="on"] .materialBox,
+html[data-ext-dark-mode="on"] .timeline,
+html[data-ext-dark-mode="on"] .tutorialDialog,
+html[data-ext-dark-mode="on"] .userStatusList {
+  box-shadow: 2px 2px 8px #000a !important;
+}
+html[data-ext-dark-mode="on"] .editorMath {
+  --mathlive-background-color: #151515 !important;
+  --mathlive-keyboard-toolbar-text: #e3e4e8 !important;
+  --mathlive-accent-color: #3d9bff !important;
+  --mathlive-button-hover-color: #303030 !important;
+}
